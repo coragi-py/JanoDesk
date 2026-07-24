@@ -9,4 +9,5 @@ urlpatterns = [
     path('api/v1/auth/', include('authentication.urls')),
     path('api/v1/recovery/', include('recovery.urls')),
     path('api/v1/lgpd/', include('lgpd.urls')),
+    path('api/v1/tickets/', include('tickets.urls')),
 ]
