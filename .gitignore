@@ -1,18 +1,28 @@
-# --- Backend (Python/Django) ---
+# =========================================
+# Backend (Python/Django)
+# =========================================
+# Pastas de ambiente e banco de dados local
 jano-backend/venv/
 jano-backend/.env
-jano-backend/__pycache__/
-jano-backend/*.pyc
 jano-backend/db.sqlite3
 jano-backend/media/
 
-# --- Frontend (Node/Next.js) ---
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# =========================================
+# Frontend (Node/Next.js)
+# =========================================
 jano-frontend/node_modules/
 jano-frontend/.next/
 jano-frontend/.env.local
 jano-frontend/.env.development.local
 
-# --- OS / IDEs ---
+# =========================================
+# OS / IDEs
+# =========================================
 .vscode/
 .idea/
 .DS_Store

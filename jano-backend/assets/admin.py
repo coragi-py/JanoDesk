@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Asset
 
-# Register your models here.
+# Registra a tabela do CMDB
+admin.site.register(Asset)
