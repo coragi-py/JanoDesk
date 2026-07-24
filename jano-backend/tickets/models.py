@@ -23,9 +23,12 @@ class SlaConfig(models.Model):
         ('URGENTE', 'Urgente (Crítico)'),
     ]
     prioridade = models.CharField(max_length=20, choices=PRIORITY_CHOICES, unique=True)
-    tempo_resposta_horas = models.IntegerField(help_text="Tempo máximo para o primeiro atendimento")
-    tempo_resolucao_horas = models.IntegerField(help_text="Tempo máximo para resolver o chamado")
-
+    tempo_resposta_minutos = models.IntegerField(
+        help_text="Tempo limite para a primeira resposta em MINUTOS (Ex: 30 para meia hora, 120 para 2 horas)"
+    )
+    tempo_resolucao_minutos = models.IntegerField(
+        help_text="Tempo limite para a solução final em MINUTOS (Ex: 240 para 4 horas)"
+    )
     def __str__(self):
         return f"SLA - {self.get_prioridade_display()}"
 
